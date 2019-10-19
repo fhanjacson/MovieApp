@@ -74,7 +74,9 @@ class _MyAppState extends State<MyApp> {
 
   Future<Null> _refreshController() async {
     setState(() {
-      fetchMovies();
+      movies = null;
     });
+
+    fetchMovies();
   }
 }
